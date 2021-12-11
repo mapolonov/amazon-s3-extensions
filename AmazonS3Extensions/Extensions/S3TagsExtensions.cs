@@ -10,9 +10,7 @@ namespace AmazonS3Extensions.Extensions
         {
             var tagDictionary = new Dictionary<string, string>();
             foreach ( var tag in tags)
-            {
                 tagDictionary[tag.Key] = tag.Value;
-            }
 
             return tagDictionary;
         }
