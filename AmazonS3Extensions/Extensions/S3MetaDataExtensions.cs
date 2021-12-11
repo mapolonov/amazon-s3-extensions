@@ -21,9 +21,7 @@ namespace AmazonS3Extensions.Extensions
         public static void CopyToMetadataCollection(this IDictionary<string, string> metaData, MetadataCollection metadataCollection, string originKey)
         {
             foreach (var data in metaData.Where(pair => pair.Key != originKey))
-            {
                 metadataCollection.Add(data.Key, data.Value);
-            }
         }
     }
 }
